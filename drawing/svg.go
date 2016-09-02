@@ -85,7 +85,7 @@ func (s *diagram) svg(w io.Writer) {
 			pop.label, pop.x, pop.y, pop.r, pop.Col)
 
 		if s.ShowLabels {
-			fmt.Fprintf(w, `<g transform="translate(%f,%f) rotate(-30)">`,
+			fmt.Fprintf(w, `<g transform="translate(%f,%f) rotate(-60)">`,
 				pop.x, pop.y)
 			chg := pop.label
 			if pop.Cnt > 1 {
